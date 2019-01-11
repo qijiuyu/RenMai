@@ -65,8 +65,8 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile files('libs/glide-3.7.0.jar')
-    compile 'com.tencent.bugly:crashreport:latest.release'
-    compile 'com.tencent.bugly:nativecrashreport:latest.release'
     compile files('libs/zxing.jar')
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'com.hyphenate:hyphenate-sdk-lite:3.3.0'
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
 }

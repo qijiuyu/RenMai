@@ -170,6 +170,11 @@
    -keep class net.edaibu.easywalking.bean.** { *; }
 
 
+      # 环信混淆
+   -keep class com.hyphenate.** {*;}
+   -dontwarn  com.hyphenate.**
+
+
 
 
 
