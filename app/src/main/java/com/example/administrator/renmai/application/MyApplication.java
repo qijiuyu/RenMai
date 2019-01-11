@@ -2,6 +2,7 @@ package com.example.administrator.renmai.application;
 
 import android.app.Application;
 
+import com.example.administrator.renmai.R;
 import com.example.administrator.renmai.utils.SPUtil;
 import com.example.administrator.renmai.utils.Utils;
 import com.google.gson.Gson;
