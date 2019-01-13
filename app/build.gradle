@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '25.0.3'
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
 
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.administrator.renmai"
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion 18
+        targetSdkVersion 18
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -44,7 +44,7 @@ android {
         }
         //生产环境
         release {
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources true
             signingConfig signingConfigs.keyConfig
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -61,12 +61,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:26.0.1'
+    compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile files('libs/zxing.jar')
     compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
-    compile project(':easeui')
-    compile files('libs/hyphenatechat_3.5.2.jar')
 }

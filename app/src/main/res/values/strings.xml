@@ -3,4 +3,16 @@
     <string name="photo">拍照</string>
     <string name="choose_from_photo_album">从相册选择</string>
     <string name="load_more">加载更多...</string>
+    <string name="Download_the_pictures">下载图片: 0%</string>
+    <string name="Download_the_pictures_new">下载图片:</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice">声音</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="search_new">搜</string>
+    <string name="Send_the_following_pictures">发送以下图片？</string>
+    <string name="receive_the_passthrough">收到透传：action：</string>
 </resources>
