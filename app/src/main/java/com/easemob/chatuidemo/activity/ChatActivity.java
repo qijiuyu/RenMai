@@ -1,4 +1,4 @@
-package com.easemob.chatuidemo.domain.activity;
+package com.easemob.chatuidemo.activity;
 
 import android.app.Activity;
 

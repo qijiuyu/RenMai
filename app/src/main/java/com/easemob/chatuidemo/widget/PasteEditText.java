@@ -22,8 +22,8 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.EditText;
 
-import com.easemob.chatuidemo.domain.activity.AlertDialog;
-import com.easemob.chatuidemo.domain.activity.ChatActivity;
+import com.easemob.chatuidemo.activity.AlertDialog;
+import com.easemob.chatuidemo.activity.ChatActivity;
 import com.example.administrator.renmai.R;
 
 /**

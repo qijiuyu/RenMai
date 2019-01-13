@@ -19,7 +19,6 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
-import android.R.bool;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -45,7 +44,7 @@ import com.easemob.chat.EMMessage.ChatType;
 import com.easemob.chat.EMMessage.Type;
 import com.easemob.chatuidemo.domain.RobotUser;
 import com.easemob.chatuidemo.domain.User;
-import com.easemob.chatuidemo.domain.activity.ChatActivity;
+import com.easemob.chatuidemo.activity.ChatActivity;
 import com.easemob.chatuidemo.utils.CommonUtils;
 import com.easemob.util.EMLog;
 import com.easemob.util.EasyUtils;
