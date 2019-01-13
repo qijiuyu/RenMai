@@ -63,7 +63,8 @@ public class PermissionsUtils {
             }
             if (hasPermissionDismiss) {
                 //跳转到系统设置权限页面，或者直接关闭页面，不让他继续访问
-                showSystemPermissionsSettingDialog(context);
+//                showSystemPermissionsSettingDialog(context);
+                mPermissionsResult.forbitPermissons();
             } else {
                 //全部权限通过，可以进行下一步操作。。。
                 mPermissionsResult.passPermissons();
