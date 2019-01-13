@@ -15,6 +15,7 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.administrator.renmai.utils.scan.cameras.RGBLuminanceSource;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.ChecksumException;
@@ -31,9 +32,6 @@ import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
-
-import net.edaibu.easywalking.utils.scan.cameras.RGBLuminanceSource;
-
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Hashtable;

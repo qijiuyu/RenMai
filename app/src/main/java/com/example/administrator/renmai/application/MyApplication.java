@@ -8,6 +8,7 @@ import com.example.administrator.renmai.utils.Utils;
 import com.google.gson.Gson;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+
 public class MyApplication extends Application {
 
     public static Gson gson;
@@ -25,7 +26,7 @@ public class MyApplication extends Application {
         }
 
         //初始化环信
-        initIM();
+//        initIM();
     }
 
 
