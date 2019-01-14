@@ -106,6 +106,7 @@ import com.easemob.util.EMLog;
 import com.easemob.util.PathUtil;
 import com.easemob.util.VoiceRecorder;
 import com.example.administrator.renmai.R;
+import com.example.administrator.renmai.utils.LogUtils;
 
 /**
  * 聊天页面
@@ -526,7 +527,6 @@ public class ChatActivity extends Activity implements OnClickListener, EMEventLi
 
             @Override
             public void onError(final int error, String errorMsg) {
-                EMLog.d(TAG, "join room failure : " + error);
                 runOnUiThread(new Runnable(){
                     @Override
                     public void run(){
@@ -1254,11 +1254,6 @@ public class ChatActivity extends Activity implements OnClickListener, EMEventLi
         public boolean onTouch(View v, MotionEvent event) {
             switch (event.getAction()) {
                 case MotionEvent.ACTION_DOWN:
-                    if (!CommonUtils.isExitsSdcard()) {
-                        String st4 = getResources().getString(R.string.Send_voice_need_sdcard_support);
-                        Toast.makeText(ChatActivity.this, st4, Toast.LENGTH_SHORT).show();
-                        return false;
-                    }
                     try {
                         v.setPressed(true);
                         wakeLock.acquire();
