@@ -44,6 +44,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.easemob.chatuidemo.activity.ShowBigImage" android:screenOrientation="portrait"/>
+
 
 
         <!-- 设置环信应用的AppKey -->

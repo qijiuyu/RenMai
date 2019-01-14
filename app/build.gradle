@@ -44,7 +44,7 @@ android {
         }
         //生产环境
         release {
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources true
             signingConfig signingConfigs.keyConfig
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -66,7 +66,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile files('libs/zxing.jar')
-    compile 'com.google.android.gms:play-services-gcm:9.4.0'
-    compile 'com.hyphenate:hyphenate-sdk-lite:3.3.0'
     compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
 }
