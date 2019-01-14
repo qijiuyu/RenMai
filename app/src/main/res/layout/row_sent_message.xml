@@ -24,7 +24,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="@dimen/margin_chat_activity"
-            android:background="@drawable/mini_avatar_shadow"
+            android:background="@mipmap/mini_avatar_shadow"
             android:scaleType="fitXY" />
 
        <TextView
@@ -35,7 +35,6 @@
             android:layout_marginRight="@dimen/margin_chat_activity"
             android:layout_toLeftOf="@id/iv_userhead"
             android:autoLink="web"
-            android:background="@drawable/chatto_bg"
             android:gravity="left|center"
             android:lineSpacingExtra="2dp"
             android:maxWidth="225.0dip"
@@ -50,7 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_toRightOf="@id/tv_chatcontent"
-            android:layout_below="@id/iv_userhead"/>
+            android:layout_below="@id/iv_userhead"/>
+
         -->
 
         <ImageView
@@ -60,7 +60,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/tv_chatcontent"
             android:clickable="true"
-            android:src="@drawable/msg_state_failed_resend"
+            android:src="@mipmap/msg_state_fail_resend"
             android:visibility="gone" />
 
         <TextView

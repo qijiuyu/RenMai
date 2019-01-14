@@ -2,6 +2,7 @@ package com.example.administrator.renmai.application;
 
 import android.app.Application;
 
+import com.easemob.chatuidemo.DemoHXSDKHelper;
 import com.example.administrator.renmai.R;
 import com.example.administrator.renmai.utils.SPUtil;
 import com.example.administrator.renmai.utils.Utils;
@@ -18,10 +19,9 @@ public class MyApplication extends Application {
         gson = new Gson();
         spUtil = SPUtil.getInstance(this);
 
-        String processAppName = Utils.getAppName();
-        if (processAppName == null ||!processAppName.equalsIgnoreCase(this.getPackageName())) {
-            return;
-        }
+        //初始化环信
+        DemoHXSDKHelper hxSDKHelper = new DemoHXSDKHelper();
+        hxSDKHelper.onInit(getApplicationContext());
     }
 
 

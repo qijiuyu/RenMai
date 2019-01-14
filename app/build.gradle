@@ -67,4 +67,13 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile files('libs/zxing.jar')
     compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/easemobchat_2.2.4.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile files('libs/google-play-services.jar')
+    compile files('libs/locSDK_3.3.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile files('libs/picasso-2.4.0.jar')
+    compile files('libs/umeng-analytics-v5.2.4.jar')
 }

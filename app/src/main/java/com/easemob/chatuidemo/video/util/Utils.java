@@ -10,6 +10,9 @@ import android.hardware.Camera.Size;
 import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.os.StrictMode;
+
+import com.easemob.chatuidemo.activity.ImageGridActivity;
+
 public class Utils {
 
 	private Utils() {

@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,15 +15,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-
 import com.easemob.EMCallBack;
-import com.easemob.chat.EMChatConfig;
 import com.easemob.chat.EMChatManager;
-import com.easemob.chatuidemo.R;
-import com.easemob.cloud.CloudOperationCallback;
-import com.easemob.cloud.HttpFileManager;
 import com.easemob.util.EMLog;
 import com.easemob.util.PathUtil;
+import com.example.administrator.renmai.R;
 
 /**
  * 展示视频内容
@@ -30,7 +27,7 @@ import com.easemob.util.PathUtil;
  * @author Administrator
  * 
  */
-public class ShowVideoActivity extends BaseActivity{
+public class ShowVideoActivity extends Activity{
 	private static final String TAG = "ShowVideoActivity";
 	
 	private RelativeLayout loadingLayout;

@@ -20,9 +20,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.easemob.chat.EMMessage;
-import com.easemob.chatuidemo.R;
+import com.example.administrator.renmai.R;
 
-public class ContextMenu extends BaseActivity {
+public class ContextMenu extends Activity {
 
 	private int position;
 	

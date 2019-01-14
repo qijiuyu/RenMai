@@ -25,7 +25,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="@dimen/margin_chat_activity"
-            android:background="@drawable/default_avatar"
+            android:background="@mipmap/default_avatar"
             android:scaleType="fitXY" />
 
         <LinearLayout
@@ -34,14 +34,13 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_chat_activity"
             android:layout_toLeftOf="@id/iv_userhead"
-            android:layout_toRightOf="@+id/ll_loading"
-            android:background="@drawable/chatto_bg" >
+            android:layout_toRightOf="@+id/ll_loading">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:src="@drawable/chat_item_file" />
+                android:src="@mipmap/chat_item_file" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,7 +93,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/ll_file_container"
             android:clickable="true"
-            android:src="@drawable/msg_state_failed_resend"
+            android:src="@mipmap/msg_state_fail_resend"
             android:visibility="gone" />
 
         <TextView

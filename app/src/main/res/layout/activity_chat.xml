@@ -13,8 +13,6 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <include layout="@layout/commom_back_btn" />
-
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -38,7 +36,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginRight="9dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/mm_title_remove" />
+                android:src="@mipmap/mm_title_remove" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -56,8 +54,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:scaleType="centerInside"
-                android:src="@drawable/to_group_details_normal" />
+                android:src="@mipmap/to_group_details_normal" />
+
         </RelativeLayout>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -72,7 +72,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/gray_normal" />
+            android:background="@color/btn_gray_normal" />
 
         <LinearLayout
             android:id="@+id/rl_bottom"
@@ -157,7 +157,7 @@
                     android:layout_gravity="center_vertical|right"
                     android:layout_margin="1dip"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/chatting_biaoqing_btn_normal"
+                    android:src="@mipmap/chatting_biaoqing_btn_normal"
                     android:visibility="visible" />
 
                 <ImageView
@@ -169,7 +169,7 @@
                     android:layout_gravity="center_vertical|right"
                     android:layout_margin="1dip"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/chatting_biaoqing_btn_enable"
+                    android:src="@mipmap/chatting_biaoqing_btn_enable"
                     android:visibility="invisible" />
             </RelativeLayout>
 
@@ -392,69 +392,12 @@
                             android:textColor="#727171" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/container_voice_call"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical" >
-
-                        <RelativeLayout
-                            android:layout_width="64dp"
-                            android:layout_height="64dp" >
-
-                            <ImageView
-                                android:id="@+id/btn_voice_call"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_centerInParent="true"
-                                android:background="@drawable/chat_voice_call_selector"
-                                android:clickable="true"
-                                android:onClick="onClick"
-                                android:scaleType="fitCenter" />
-                        </RelativeLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/attach_voice_call"
-                            android:textColor="#727171" />
-                    </LinearLayout>
-                     <LinearLayout
-                        android:id="@+id/container_video_call"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical" >
-
-                        <RelativeLayout
-                            android:layout_width="64dp"
-                            android:layout_height="64dp" >
-
-                            <ImageView
-                                android:id="@+id/btn_video_call"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_centerInParent="true"
-                                android:background="@drawable/chat_video_call_selector"
-                                android:clickable="true"
-                                android:onClick="onClick"
-                                android:scaleType="fitCenter" />
-                        </RelativeLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/attach_video_call"
-                            android:textColor="#727171" />
-                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 
     <RelativeLayout
@@ -502,7 +445,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/record_animate_01" />
+                android:src="@mipmap/record_animate_01" />
 
             <TextView
                 android:id="@+id/recording_hint"

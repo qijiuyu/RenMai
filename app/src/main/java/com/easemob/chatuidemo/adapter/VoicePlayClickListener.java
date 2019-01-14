@@ -25,15 +25,14 @@ import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.easemob.applib.controller.HXSDKHelper;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMMessage;
 import com.easemob.chat.EMMessage.ChatType;
 import com.easemob.chat.VoiceMessageBody;
-import com.easemob.chatuidemo.R;
 import com.easemob.chatuidemo.activity.ChatActivity;
 import com.easemob.util.EMLog;
+import com.example.administrator.renmai.R;
 
 public class VoicePlayClickListener implements View.OnClickListener {
 	private static final String TAG = "VoicePlayClickListener";
@@ -56,10 +55,7 @@ public class VoicePlayClickListener implements View.OnClickListener {
 	 * @param message
 	 * @param v
 	 * @param iv_read_status
-	 * @param context
 	 * @param activity
-	 * @param user
-	 * @param chatType
 	 */
 	public VoicePlayClickListener(EMMessage message, ImageView v, ImageView iv_read_status, BaseAdapter adapter, Activity activity,
 			String username) {
@@ -75,9 +71,9 @@ public class VoicePlayClickListener implements View.OnClickListener {
 	public void stopPlayVoice() {
 		voiceAnimation.stop();
 		if (message.direct == EMMessage.Direct.RECEIVE) {
-			voiceIconView.setImageResource(R.drawable.chatfrom_voice_playing);
+			voiceIconView.setImageResource(R.mipmap.chatfrom_voice_playing);
 		} else {
-			voiceIconView.setImageResource(R.drawable.chatto_voice_playing);
+			voiceIconView.setImageResource(R.mipmap.chatto_voice_playing);
 		}
 		// stop play voice
 		if (mediaPlayer != null) {
@@ -111,10 +107,7 @@ public class VoicePlayClickListener implements View.OnClickListener {
 			mediaPlayer.setDataSource(filePath);
 			mediaPlayer.prepare();
 			mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-
-				@Override
 				public void onCompletion(MediaPlayer mp) {
-					// TODO Auto-generated method stub
 					mediaPlayer.release();
 					mediaPlayer = null;
 					stopPlayVoice(); // stop animation
@@ -154,9 +147,9 @@ public class VoicePlayClickListener implements View.OnClickListener {
 	private void showAnimation() {
 		// play voice, and start animation
 		if (message.direct == EMMessage.Direct.RECEIVE) {
-			voiceIconView.setImageResource(R.anim.voice_from_icon);
+			voiceIconView.setImageResource(R.drawable.voice_from_icon);
 		} else {
-			voiceIconView.setImageResource(R.anim.voice_to_icon);
+			voiceIconView.setImageResource(R.drawable.voice_to_icon);
 		}
 		voiceAnimation = (AnimationDrawable) voiceIconView.getDrawable();
 		voiceAnimation.start();

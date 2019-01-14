@@ -24,7 +24,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="@dimen/margin_chat_activity"
-            android:background="@drawable/mini_avatar_shadow"
+            android:background="@mipmap/mini_avatar_shadow"
             android:scaleType="fitXY" />
 
         <RelativeLayout
@@ -38,7 +38,6 @@
                 android:id="@+id/iv_sendPicture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/chatto_bg"
                 android:scaleType="fitCenter"
                 />
         </RelativeLayout>	
@@ -74,7 +73,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/rl_picture"
             android:clickable="true"
-            android:src="@drawable/msg_state_failed_resend"
+            android:src="@mipmap/msg_state_fail_resend"
             android:visibility="gone" />
 
         <TextView

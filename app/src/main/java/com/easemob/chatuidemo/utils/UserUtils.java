@@ -9,6 +9,7 @@ import com.easemob.applib.controller.HXSDKHelper;
 import com.easemob.chatuidemo.DemoHXSDKHelper;
 import com.easemob.chatuidemo.domain.User;
 import com.example.administrator.renmai.R;
+import com.example.administrator.renmai.utils.LogUtils;
 import com.squareup.picasso.Picasso;
 
 public class UserUtils {

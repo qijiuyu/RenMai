@@ -13,6 +13,7 @@
  */
 package com.easemob.chatuidemo.activity;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -46,9 +47,9 @@ import com.baidu.mapapi.map.MyLocationConfiguration.LocationMode;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.CoordinateConverter;
-import com.easemob.chatuidemo.R;
+import com.example.administrator.renmai.R;
 
-public class BaiduMapActivity extends BaseActivity {
+public class BaiduMapActivity extends Activity {
 
 	private final static String TAG = "map";
 	static MapView mMapView = null;
@@ -137,7 +138,7 @@ public class BaiduMapActivity extends BaseActivity {
 		converter.from(CoordinateConverter.CoordType.COMMON);
 		LatLng convertLatLng = converter.convert();
 		OverlayOptions ooA = new MarkerOptions().position(convertLatLng).icon(BitmapDescriptorFactory
-				.fromResource(R.drawable.icon_marka))
+				.fromResource(R.mipmap.icon_marka))
 				.zIndex(4).draggable(true);
 		mBaiduMap.addOverlay(ooA);
 		MapStatusUpdate u = MapStatusUpdateFactory.newLatLngZoom(convertLatLng, 17.0f);
@@ -240,7 +241,7 @@ public class BaiduMapActivity extends BaseActivity {
 			converter.from(CoordinateConverter.CoordType.COMMON);
 			LatLng convertLatLng = converter.convert();
 			OverlayOptions ooA = new MarkerOptions().position(convertLatLng).icon(BitmapDescriptorFactory
-					.fromResource(R.drawable.icon_marka))
+					.fromResource(R.mipmap.icon_marka))
 					.zIndex(4).draggable(true);
 			mBaiduMap.addOverlay(ooA);
 			MapStatusUpdate u = MapStatusUpdateFactory.newLatLngZoom(convertLatLng, 17.0f);
